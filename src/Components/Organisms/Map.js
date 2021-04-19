@@ -1,4 +1,3 @@
-import 'leaflet/dist/leaflet.css'
 import { MapContainer, TileLayer, ZoomControl, Marker, Popup } from 'react-leaflet'
 import { iconMarkerRed } from '../../Resources/iconMarkerRed'
 import { iconMarkerYellow } from '../../Resources/iconMarkerYellow'
