@@ -1,8 +1,8 @@
 {
   "files": {
-    "main.css": "/kitesurfing/static/css/main.8d0858df.chunk.css",
-    "main.js": "/kitesurfing/static/js/main.fd896c63.chunk.js",
-    "main.js.map": "/kitesurfing/static/js/main.fd896c63.chunk.js.map",
+    "main.css": "/kitesurfing/static/css/main.d2c3bd96.chunk.css",
+    "main.js": "/kitesurfing/static/js/main.3d65fafa.chunk.js",
+    "main.js.map": "/kitesurfing/static/js/main.3d65fafa.chunk.js.map",
     "runtime-main.js": "/kitesurfing/static/js/runtime-main.ef0bd6c7.js",
     "runtime-main.js.map": "/kitesurfing/static/js/runtime-main.ef0bd6c7.js.map",
     "static/css/2.c2b0e786.chunk.css": "/kitesurfing/static/css/2.c2b0e786.chunk.css",
@@ -12,7 +12,7 @@
     "static/js/3.523f10ba.chunk.js.map": "/kitesurfing/static/js/3.523f10ba.chunk.js.map",
     "index.html": "/kitesurfing/index.html",
     "static/css/2.c2b0e786.chunk.css.map": "/kitesurfing/static/css/2.c2b0e786.chunk.css.map",
-    "static/css/main.8d0858df.chunk.css.map": "/kitesurfing/static/css/main.8d0858df.chunk.css.map",
+    "static/css/main.d2c3bd96.chunk.css.map": "/kitesurfing/static/css/main.d2c3bd96.chunk.css.map",
     "static/js/2.ca3cd607.chunk.js.LICENSE.txt": "/kitesurfing/static/js/2.ca3cd607.chunk.js.LICENSE.txt",
     "static/media/map-marker-red.6aa367fb.svg": "/kitesurfing/static/media/map-marker-red.6aa367fb.svg",
     "static/media/map-marker-yellow.edabab31.svg": "/kitesurfing/static/media/map-marker-yellow.edabab31.svg"
@@ -21,7 +21,7 @@
     "static/js/runtime-main.ef0bd6c7.js",
     "static/css/2.c2b0e786.chunk.css",
     "static/js/2.ca3cd607.chunk.js",
-    "static/css/main.8d0858df.chunk.css",
-    "static/js/main.fd896c63.chunk.js"
+    "static/css/main.d2c3bd96.chunk.css",
+    "static/js/main.3d65fafa.chunk.js"
   ]
 }
