@@ -4,7 +4,7 @@ const WrapperForm = ({
   children
 }) => {
   return (
-    <div className="w-96 shadow-lg overflow-hidden rounded-2xl">
+    <div className="w-80 shadow-lg overflow-hidden rounded-2xl">
       {children}
     </div>
   )
