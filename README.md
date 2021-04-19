@@ -6,6 +6,11 @@ While it may not be a complex project, it was a learning process for me and it i
 
 Kitesurfing is an app where you can manage your favourite (and less favourite) locations to practice, well... kitesurfing. You can save your favourite spots and the high season for each area, so you can easily pick the right place.
 
+The app can be accessed at: https://biolete.studio/kitesurfing
+Some creditendials for testing:
+  - E-mail: demo@biolete.studio
+  - Password: demo
+
 ## Implementation
 
 I started by building a basic UI based on the given sketch. I have used TailwindCSS for the styling and React-Leaflet for the Maps API. At first I really wanted to match the design pixel by pixel and every shade of color. That version can be built from the '/ver-sketch' directory, but there is not much functionality implemented. The design is responsive, it works great on any screen.
