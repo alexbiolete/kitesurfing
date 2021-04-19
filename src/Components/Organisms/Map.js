@@ -10,9 +10,9 @@ const Map = ({
   deleteFavourite
 }) => {
   return (
-    <MapContainer center={[35, -95]} zoom={3} scrollWheelZoom={false}
+    <MapContainer center={[35, 0]} zoom={3} scrollWheelZoom={false}
       zoomControl={false}
-      className="min-w-screen h-screen z-0"
+      className="min-w-screen h-96 z-0"
     >
       <TileLayer
         attribution='&copy; <a href="http://osm.org/copyright">OpenStreetMap</a> contributors'
