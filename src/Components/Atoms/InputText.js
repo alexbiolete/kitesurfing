@@ -47,7 +47,7 @@ InputText.propTypes = {
   id: PropTypes.string,
   title: PropTypes.string,
   type: PropTypes.string,
-  hasChildren: PropTypes.func,
+  hasChildren: PropTypes.bool,
   onChange: PropTypes.func,
   value: PropTypes.string,
   placeholder: PropTypes.string,

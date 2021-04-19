@@ -3,6 +3,7 @@ import { Link } from 'react-router-dom'
 import PropTypes from 'prop-types'
 import ButtonPrimary from '../../Components/Atoms/ButtonPrimary'
 import LinkOutlineSecondary from '../../Components/Atoms/LinkOutlineSecondary'
+import WrapperForm from '../../Components/Molecules/WrapperForm'
 import WrapperInput from '../../Components/Molecules/WrapperInput'
 
 const Login = ({
@@ -42,10 +43,10 @@ const Login = ({
   }
 
   return (
-    <div className="shadow-lg overflow-hidden rounded-2xl">
+    <WrapperForm>
       <form onSubmit={onSubmit}>
-        <div className="px-4 py-5 bg-white sm:p-6">
-          <div className="w-60 flex flex-col items-center space-y-4">
+        <div className="w-full px-4 py-5 bg-white sm:p-6">
+          <div className="flex flex-col items-center space-y-4">
             <Link to='/'>
               <h1
                 className="pt-4 text-6xl select-none"
@@ -98,7 +99,7 @@ const Login = ({
           <ButtonPrimary title="Log in" type="submit" />
         </div>
       </form>
-    </div>
+    </WrapperForm>
   )
 }
 

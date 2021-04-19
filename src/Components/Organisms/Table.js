@@ -12,7 +12,7 @@ const Table = ({
       <div className="inline-block min-w-full overflow-hidden -mb-1.5">
         <table className="table-auto min-w-full">
           <thead>
-            <tr className="bg-gray-200">
+            <tr className="bg-gray-100">
               {/*
                 * Generate columns from array.
                 */}
@@ -122,7 +122,8 @@ const Table = ({
               items.map((item, index) => (
                 <tr
                   key={index}
-                  style={{ backgroundColor: index % 2 === 1 ? "#F9F9F9" : "transparent" }}
+                  className="shadow-inner"
+                  style={{ backgroundColor: index % 2 === 1 ? "#FCFCFC" : "transparent" }}
                 >
                   <td className="px-6 py-2 flex items-center font-normal">
                     {item.name}
