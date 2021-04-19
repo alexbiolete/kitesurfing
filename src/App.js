@@ -1,5 +1,5 @@
 import { useState, useEffect, useMemo } from 'react'
-import { BrowserRouter as Router, Route } from 'react-router-dom'
+import { HashRouter as Router, Route, Switch } from 'react-router-dom'
 import { dbApiUrl } from './App/config'
 import { months } from './Resources/listMonths'
 import Guest from './Templates/Guest'
@@ -419,7 +419,7 @@ function App() {
           * it will be redirected to the Dashboard.
           */}
         {!localStorage.getItem('userName') ? (
-          <div>
+          <Switch>
             <Route path='/' exact>
               <Guest>
                 <Login
@@ -441,9 +441,9 @@ function App() {
                 />
               </Guest>
             </Route>
-          </div>
+          </Switch>
         ) : (
-          <div>
+          <Switch>
             <Route path='/' exact>
               <Auth
                 authenticatedUserName={localStorage.getItem('userName')}
@@ -466,7 +466,7 @@ function App() {
                 />
               </Auth>
             </Route>
-          </div>
+          </Switch>
         )}
       </div>
     </Router>
