@@ -1,3 +1,4 @@
+import PropTypes from 'prop-types'
 import LabelUnderlinedSmall from '../Atoms/LabelUnderlinedSmall'
 import InputTextUnderlinedSmall from '../Atoms/InputTextUnderlinedSmall'
 
@@ -25,6 +26,16 @@ const WrapperInputUnderlinedSmall = ({
       />
     </div>
   )
+}
+
+WrapperInputUnderlinedSmall.propTypes = {
+  id: PropTypes.string,
+  title: PropTypes.string,
+  type: PropTypes.string,
+  onChange: PropTypes.func,
+  value: PropTypes.string,
+  placeholder: PropTypes.string,
+  required: PropTypes.bool
 }
 
 export default WrapperInputUnderlinedSmall

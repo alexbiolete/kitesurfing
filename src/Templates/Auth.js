@@ -1,3 +1,4 @@
+import PropTypes from 'prop-types'
 import Navbar from '../Components/Organisms/Navbar'
 
 const Auth = ({
@@ -20,6 +21,13 @@ const Auth = ({
       </div>
     </div>
   )
+}
+
+Auth.propTypes = {
+  children: PropTypes.any,
+  authenticatedUserName: PropTypes.string,
+  setAuthenticatedUserName: PropTypes.func,
+  createSpot: PropTypes.func
 }
 
 export default Auth

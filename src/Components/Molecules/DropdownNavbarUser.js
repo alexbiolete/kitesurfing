@@ -1,3 +1,4 @@
+import PropTypes from 'prop-types'
 import ButtonSimpleDanger from '../Atoms/ButtonSimpleDanger'
 
 const DropdownNavbarUser = ({ showUserMenu, setAuthenticatedUserName }) => {
@@ -25,6 +26,11 @@ const DropdownNavbarUser = ({ showUserMenu, setAuthenticatedUserName }) => {
       )}
     </div>
   )
+}
+
+DropdownNavbarUser.propTypes = {
+  showUserMenu: PropTypes.bool,
+  setAuthenticatedUserName: PropTypes.func
 }
 
 export default DropdownNavbarUser

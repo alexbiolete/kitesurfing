@@ -1,3 +1,4 @@
+import PropTypes from 'prop-types'
 import ButtonOutlineSecondary from '../Atoms/ButtonOutlineSecondary'
 import WrapperInputUnderlinedSmall from '../Molecules/WrapperInputUnderlinedSmall'
 
@@ -44,6 +45,14 @@ const ModalFilter = ({
       </div>
     </div>
   )
+}
+
+ModalFilter.propTypes = {
+  filterCountry: PropTypes.string,
+  setFilterCountry: PropTypes.func,
+  filterProbability: PropTypes.string,
+  setFilterProbability: PropTypes.func,
+  onClick: PropTypes.func
 }
 
 export default ModalFilter

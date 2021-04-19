@@ -1,5 +1,6 @@
 import { useState } from 'react'
 import { Link } from 'react-router-dom'
+import PropTypes from 'prop-types'
 import ButtonPrimary from '../../Components/Atoms/ButtonPrimary'
 import LinkOutlineSecondary from '../../Components/Atoms/LinkOutlineSecondary'
 import WrapperInput from '../../Components/Molecules/WrapperInput'
@@ -99,6 +100,14 @@ const Login = ({
       </form>
     </div>
   )
+}
+
+Login.propTypes = {
+  fetchSession: PropTypes.func,
+  session: PropTypes.string,
+  setSession: PropTypes.func,
+  users: PropTypes.array,
+  setAuthenticatedUserName: PropTypes.func
 }
 
 export default Login

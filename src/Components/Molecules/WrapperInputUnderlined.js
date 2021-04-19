@@ -1,3 +1,4 @@
+import PropTypes from 'prop-types'
 import LabelUnderlined from '../Atoms/LabelUnderlined'
 import InputTextUnderlined from '../Atoms/InputTextUnderlined'
 
@@ -25,6 +26,16 @@ const WrapperInputUnderlined = ({
       />
     </div>
   )
+}
+
+WrapperInputUnderlined.propTypes = {
+  id: PropTypes.string,
+  title: PropTypes.string,
+  type: PropTypes.string,
+  onChange: PropTypes.func,
+  value: PropTypes.string,
+  placeholder: PropTypes.string,
+  required: PropTypes.bool
 }
 
 export default WrapperInputUnderlined

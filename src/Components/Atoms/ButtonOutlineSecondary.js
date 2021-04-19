@@ -1,3 +1,5 @@
+import PropTypes from 'prop-types'
+
 const ButtonOutlineSecondary = ({
   children,
   title,
@@ -18,6 +20,13 @@ const ButtonOutlineSecondary = ({
       </div>
     </button>
   )
+}
+
+ButtonOutlineSecondary.propTypes = {
+  children: PropTypes.any,
+  title: PropTypes.string,
+  type: PropTypes.string,
+  onClick: PropTypes.func
 }
 
 export default ButtonOutlineSecondary

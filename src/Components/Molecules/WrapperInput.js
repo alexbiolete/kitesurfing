@@ -1,3 +1,4 @@
+import PropTypes from 'prop-types'
 import Label from '../Atoms/Label'
 import InputText from '../Atoms/InputText'
 
@@ -44,6 +45,17 @@ const WrapperInput = ({
       </span>
     </div>
   )
+}
+
+WrapperInput.propTypes = {
+  children: PropTypes.any,
+  id: PropTypes.string,
+  title: PropTypes.string,
+  type: PropTypes.string,
+  onChange: PropTypes.func,
+  value: PropTypes.string,
+  placeholder: PropTypes.string,
+  required: PropTypes.bool
 }
 
 export default WrapperInput

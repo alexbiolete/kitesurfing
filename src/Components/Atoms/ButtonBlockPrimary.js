@@ -1,3 +1,5 @@
+import PropTypes from 'prop-types'
+
 const ButtonBlockPrimary = ({
   children,
   title,
@@ -18,6 +20,13 @@ const ButtonBlockPrimary = ({
       </div>
     </button>
   )
+}
+
+ButtonBlockPrimary.propTypes = {
+  children: PropTypes.any,
+  title: PropTypes.string,
+  type: PropTypes.string,
+  onClick: PropTypes.func
 }
 
 export default ButtonBlockPrimary

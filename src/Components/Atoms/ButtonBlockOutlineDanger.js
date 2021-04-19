@@ -1,3 +1,5 @@
+import PropTypes from 'prop-types'
+
 const ButtonBlockOutlineDanger = ({
   children,
   title,
@@ -18,6 +20,13 @@ const ButtonBlockOutlineDanger = ({
       </div>
     </button>
   )
+}
+
+ButtonBlockOutlineDanger.propTypes = {
+  children: PropTypes.any,
+  title: PropTypes.string,
+  type: PropTypes.string,
+  onClick: PropTypes.func
 }
 
 export default ButtonBlockOutlineDanger

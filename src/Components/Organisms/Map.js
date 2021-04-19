@@ -1,3 +1,4 @@
+import PropTypes from 'prop-types'
 import { MapContainer, TileLayer, ZoomControl, Marker, Popup } from 'react-leaflet'
 import { iconMarkerRed } from '../../Resources/iconMarkerRed'
 import { iconMarkerYellow } from '../../Resources/iconMarkerYellow'
@@ -119,6 +120,12 @@ const Map = ({
       ))}
     </MapContainer>
   )
+}
+
+Map.propTypes = {
+  spots: PropTypes.array,
+  createFavourite: PropTypes.func,
+  deleteFavourite: PropTypes.func
 }
 
 export default Map

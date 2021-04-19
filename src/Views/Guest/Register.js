@@ -1,5 +1,6 @@
 import { useState } from 'react'
 import { Link, useHistory } from "react-router-dom"
+import PropTypes from 'prop-types'
 import ButtonPrimary from '../../Components/Atoms/ButtonPrimary'
 import LinkOutlineSecondary from '../../Components/Atoms/LinkOutlineSecondary'
 import WrapperInput from '../../Components/Molecules/WrapperInput'
@@ -120,6 +121,11 @@ const Register = ({
       </form>
     </div>
   )
+}
+
+Register.propTypes = {
+  users: PropTypes.array,
+  onAdd: PropTypes.func
 }
 
 export default Register

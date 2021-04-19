@@ -1,4 +1,5 @@
 import React, { useState } from 'react'
+import PropTypes from 'prop-types'
 import ButtonSimpleLargeSecondary from '../Atoms/ButtonSimpleLargeSecondary'
 import ButtonSimpleLargeDanger from '../Atoms/ButtonSimpleLargeDanger'
 import ModalFilter from '../Molecules/ModalFilter'
@@ -69,6 +70,17 @@ const MenuFilter = ({
       )}
     </div>
   )
+}
+
+MenuFilter.propTypes = {
+  spots: PropTypes.array,
+  setSpots: PropTypes.func,
+  unfilteredSpots: PropTypes.array,
+  filterCountry: PropTypes.string,
+  setFilterCountry: PropTypes.func,
+  filterProbability: PropTypes.string,
+  setFilterProbability: PropTypes.func,
+  setFilterSearch: PropTypes.func
 }
 
 export default MenuFilter

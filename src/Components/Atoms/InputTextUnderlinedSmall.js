@@ -1,3 +1,5 @@
+import PropTypes from 'prop-types'
+
 const InputTextUnderlinedSmall = ({
   id,
   title,
@@ -21,6 +23,16 @@ const InputTextUnderlinedSmall = ({
       required={required}
     />
   )
+}
+
+InputTextUnderlinedSmall.propTypes = {
+  id: PropTypes.string,
+  title: PropTypes.string,
+  type: PropTypes.string,
+  onChange: PropTypes.func,
+  value: PropTypes.string,
+  placeholder: PropTypes.string,
+  required: PropTypes.bool
 }
 
 export default InputTextUnderlinedSmall

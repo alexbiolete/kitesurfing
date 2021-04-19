@@ -1,3 +1,5 @@
+import PropTypes from 'prop-types'
+
 const LabelUnderlined = ({ id, title }) => {
   return (
     <label
@@ -7,6 +9,11 @@ const LabelUnderlined = ({ id, title }) => {
       {title}
     </label>
   )
+}
+
+LabelUnderlined.propTypes = {
+  id: PropTypes.string,
+  title: PropTypes.string
 }
 
 export default LabelUnderlined

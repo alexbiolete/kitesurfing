@@ -142,6 +142,8 @@ const Navbar = ({
 }
 
 Navbar.propTypes = {
+  authenticatedUserName: PropTypes.string,
+  setAuthenticatedUserName: PropTypes.func,
   onClick: PropTypes.func
 }
 

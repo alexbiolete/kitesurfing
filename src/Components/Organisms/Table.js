@@ -1,6 +1,7 @@
+import PropTypes from 'prop-types'
 import { columns } from '../../Resources/listColumns'
 
-const TableSpots = ({
+const Table = ({
   spots,
   useSortableData
 }) => {
@@ -172,4 +173,9 @@ const TableSpots = ({
   )
 }
 
-export default TableSpots
+Table.propTypes = {
+  spots: PropTypes.array,
+  useSortableData: PropTypes.object
+}
+
+export default Table

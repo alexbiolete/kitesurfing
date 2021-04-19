@@ -1,3 +1,5 @@
+import PropTypes from 'prop-types'
+
 const ButtonSimpleLargeDanger = ({
   children,
   title,
@@ -18,6 +20,13 @@ const ButtonSimpleLargeDanger = ({
       </div>
     </button>
   )
+}
+
+ButtonSimpleLargeDanger.propTypes = {
+  children: PropTypes.any,
+  title: PropTypes.string,
+  type: PropTypes.string,
+  onClick: PropTypes.func
 }
 
 export default ButtonSimpleLargeDanger

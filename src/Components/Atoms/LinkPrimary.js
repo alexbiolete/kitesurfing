@@ -1,4 +1,5 @@
 import { Link } from 'react-router-dom'
+import PropTypes from 'prop-types'
 
 const LinkPrimary = ({
   children,
@@ -18,6 +19,12 @@ const LinkPrimary = ({
       </div>
     </Link>
   )
+}
+
+LinkPrimary.propTypes = {
+  children: PropTypes.any,
+  to: PropTypes.string,
+  title: PropTypes.string
 }
 
 export default LinkPrimary

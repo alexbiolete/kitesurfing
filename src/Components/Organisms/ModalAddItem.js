@@ -1,4 +1,5 @@
 import { useState } from 'react'
+import PropTypes from 'prop-types'
 import DateFnsUtils from '@date-io/date-fns'
 import {
   DatePicker,
@@ -123,6 +124,12 @@ const ModalAddItem = ({
       </div>
     </div>
   )
+}
+
+ModalAddItem.propTypes = {
+  showModalAddItem: PropTypes.bool,
+  setShowModalAddItem: PropTypes.func,
+  onAdd: PropTypes.func
 }
 
 export default ModalAddItem

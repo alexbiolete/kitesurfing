@@ -1,3 +1,5 @@
+import PropTypes from 'prop-types'
+
 const ButtonBlockDanger = ({
   children,
   title,
@@ -18,6 +20,13 @@ const ButtonBlockDanger = ({
       </div>
     </button>
   )
+}
+
+ButtonBlockDanger.propTypes = {
+  children: PropTypes.any,
+  title: PropTypes.string,
+  type: PropTypes.string,
+  onClick: PropTypes.func
 }
 
 export default ButtonBlockDanger

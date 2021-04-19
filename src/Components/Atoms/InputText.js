@@ -1,3 +1,5 @@
+import PropTypes from 'prop-types'
+
 const InputText = ({
   id,
   title,
@@ -39,6 +41,17 @@ const InputText = ({
       )}
     </div>
   )
+}
+
+InputText.propTypes = {
+  id: PropTypes.string,
+  title: PropTypes.string,
+  type: PropTypes.string,
+  hasChildren: PropTypes.func,
+  onChange: PropTypes.func,
+  value: PropTypes.string,
+  placeholder: PropTypes.string,
+  required: PropTypes.bool
 }
 
 export default InputText

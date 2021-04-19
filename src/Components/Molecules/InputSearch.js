@@ -1,3 +1,5 @@
+import PropTypes from 'prop-types'
+
 const InputSearch = ({
   spots,
   setSpots,
@@ -35,6 +37,14 @@ const InputSearch = ({
       </span>
     </div>
   )
+}
+
+InputSearch.propTypes = {
+  spots: PropTypes.array,
+  setSpots: PropTypes.func,
+  unfilteredSpots: PropTypes.array,
+  filterSearch: PropTypes.string,
+  setFilterSearch: PropTypes.func
 }
 
 export default InputSearch

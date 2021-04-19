@@ -1,3 +1,4 @@
+import PropTypes from 'prop-types'
 import InputSearch from '../../Components/Molecules/InputSearch'
 import Map from '../../Components/Organisms/Map'
 import MenuFilter from '../../Components/Organisms/MenuFilter'
@@ -56,6 +57,21 @@ const Dashboard = ({
       </div>
     </div>
   )
+}
+
+Dashboard.propTypes = {
+  spots: PropTypes.array,
+  setSpots: PropTypes.func,
+  unfilteredSpots: PropTypes.array,
+  createFavourite: PropTypes.func,
+  deleteFavourite: PropTypes.func,
+  filterCountry: PropTypes.string,
+  setFilterCountry: PropTypes.func,
+  filterProbability: PropTypes.string,
+  setFilterProbability: PropTypes.func,
+  filterSearch: PropTypes.string,
+  setFilterSearch: PropTypes.func,
+  useSortableData: PropTypes.func
 }
 
 export default Dashboard
