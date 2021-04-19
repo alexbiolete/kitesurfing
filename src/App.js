@@ -92,7 +92,7 @@ function App() {
             }
             return 0
           })
-        // Sorting logic based on strings (non-case sensitive)
+        // Sorting logic for strings (non-case sensitive)
         } else {
           sortableItems.sort((a, b) => {
             if (a[sortConfig.key].toLowerCase() < b[sortConfig.key].toLowerCase()) {
