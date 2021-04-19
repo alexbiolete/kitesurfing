@@ -1,5 +1,5 @@
 import { useState, useEffect, useMemo } from 'react'
-import { HashRouter as Router, Route, Switch } from 'react-router-dom'
+import { Route, Switch } from 'react-router-dom'
 import { dbApiUrl } from './App/config'
 import { months } from './Resources/listMonths'
 import Guest from './Templates/Guest'
@@ -408,68 +408,66 @@ function App() {
   }
 
   return (
-    <Router>
-      <div className="antialiased">
-        {/*
-          * If the user name is not set in localStorage,
-          * it can only access the Login and Register routes.
-          *
-          * The user name acts as a session token. If a Login
-          * or a Registration succeeds and the value is set,
-          * it will be redirected to the Dashboard.
-          */}
-        {!localStorage.getItem('userName') ? (
-          <Switch>
-            <Route path='/' exact>
-              <Guest>
-                <Login
-                  fetchSession={fetchSession}
-                  session={session}
-                  setSession={setSession}
-                  users={users}
-                  authenticatedUserName={authenticatedUserName}
-                  setAuthenticatedUserName={setAuthenticatedUserName}
-                />
-              </Guest>
-            </Route>
-
-            <Route path='/register' exact>
-              <Guest>
-                <Register
-                  users={users}
-                  onAdd={createUser}
-                />
-              </Guest>
-            </Route>
-          </Switch>
-        ) : (
-          <Switch>
-            <Route path='/' exact>
-              <Auth
-                authenticatedUserName={localStorage.getItem('userName')}
+    <div className="antialiased">
+      {/*
+        * If the user name is not set in localStorage,
+        * it can only access the Login and Register routes.
+        *
+        * The user name acts as a session token. If a Login
+        * or a Registration succeeds and the value is set,
+        * it will be redirected to the Dashboard.
+        */}
+      {!localStorage.getItem('userName') ? (
+        <Switch>
+          <Route path='/' exact>
+            <Guest>
+              <Login
+                fetchSession={fetchSession}
+                session={session}
+                setSession={setSession}
+                users={users}
+                authenticatedUserName={authenticatedUserName}
                 setAuthenticatedUserName={setAuthenticatedUserName}
-                createSpot={createSpot}
-              >
-                <Dashboard
-                  spots={spots}
-                  setSpots={setSpots}
-                  unfilteredSpots={unfilteredSpots}
-                  createFavourite={createFavourite}
-                  deleteFavourite={deleteFavourite}
-                  filterCountry={filterCountry}
-                  setFilterCountry={setFilterCountry}
-                  filterProbability={filterProbability}
-                  setFilterProbability={setFilterProbability}
-                  filterSearch={filterSearch}
-                  setFilterSearch={setFilterSearch}
-                  useSortableData={useSortableData}
-                />
-              </Auth>
-            </Route>
-          </Switch>
-        )}
-      </div>
-    </Router>
+              />
+            </Guest>
+          </Route>
+
+          <Route path='/register' exact>
+            <Guest>
+              <Register
+                users={users}
+                onAdd={createUser}
+              />
+            </Guest>
+          </Route>
+        </Switch>
+      ) : (
+        <Switch>
+          <Route path='/' exact>
+            <Auth
+              authenticatedUserName={localStorage.getItem('userName')}
+              setAuthenticatedUserName={setAuthenticatedUserName}
+              createSpot={createSpot}
+            >
+              <Dashboard
+                spots={spots}
+                setSpots={setSpots}
+                unfilteredSpots={unfilteredSpots}
+                createFavourite={createFavourite}
+                deleteFavourite={deleteFavourite}
+                filterCountry={filterCountry}
+                setFilterCountry={setFilterCountry}
+                filterProbability={filterProbability}
+                setFilterProbability={setFilterProbability}
+                filterSearch={filterSearch}
+                setFilterSearch={setFilterSearch}
+                useSortableData={useSortableData}
+              />
+            </Auth>
+          </Route>
+        </Switch>
+      )}
+    </div>
   )
 }
 
