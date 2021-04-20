@@ -176,7 +176,7 @@ const Table = ({
 
 Table.propTypes = {
   spots: PropTypes.array,
-  useSortableData: PropTypes.object
+  useSortableData: PropTypes.func
 }
 
 export default Table

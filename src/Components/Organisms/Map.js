@@ -13,7 +13,8 @@ const Map = ({
   return (
     <MapContainer center={[35, 0]} zoom={3} scrollWheelZoom={false}
       zoomControl={false}
-      className="min-w-screen h-96 z-0"
+      className="min-w-screen z-0"
+      style={{ height: '70vh' }}
     >
       <TileLayer
         attribution='&copy; <a href="http://osm.org/copyright">OpenStreetMap</a> contributors'
