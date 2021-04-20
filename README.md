@@ -25,6 +25,12 @@ New spots can be added from the Navbar. I have stored an array with all the coun
 
 I have also implemented some very basic Registration and Login functionalities. The user name is saved in Local Storage and acts as a session token.
 
+## Known issues
+
+The code looks a little bit messy. I would have switched from TailwindCSS to plain CSS in stylesheet files or JSX constants for styling, but it would have been a quite lengthy process to convert the whole project at the point where the code became bloated.
+
+The password is stored in plain text. I would have encrypted it before sending it to the API, but I have to learn more about hashing for this process.
+
 ### References
 * https://reactjs.org/docs/
 * https://www.youtube.com/watch?v=w7ejDZ8SWv8
