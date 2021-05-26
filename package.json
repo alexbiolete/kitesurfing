@@ -1,6 +1,6 @@
 {
-  "name": "kitesurfing",
-  "homepage": "https://alexbiolete.github.io/kitesurfing/#",
+  "name": "react-kite",
+  "homepage": "https://alexbiolete.github.io/react-kite/#",
   "version": "1.0.0",
   "private": true,
   "dependencies": {
